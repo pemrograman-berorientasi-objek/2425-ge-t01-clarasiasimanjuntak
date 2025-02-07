@@ -1,23 +1,29 @@
 package fintech.model;
 
-/**
- * @author NIM Nama
- * @author NIM Nama
- */
 public class Account {
     private String owner;
     private String accountname;
     private double balance;
 
-    // Konstruktor yang benar
+
     public Account(String owner, String accountname, double balance) {
         this.owner = owner;
         this.accountname = accountname;
         this.balance = balance;
     }
+    public String getAccountName() {
+        return accountname;
+    }
+    public double getBalance() {
+        return balance;
+    }
+
+    public void updateBalance(double amount) {
+        this.balance += amount;
+    }
 
     @Override
     public String toString() {
-        return accountname + "|" + owner + "|" + balance;
+        return accountname + "|" + owner + "|" + String.format("%.1f", balance);
     }
 }
