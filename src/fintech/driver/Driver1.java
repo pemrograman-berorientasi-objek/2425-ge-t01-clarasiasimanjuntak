@@ -30,5 +30,4 @@ public class Driver1 {
 
         sc.close();
     }
-    
 }
