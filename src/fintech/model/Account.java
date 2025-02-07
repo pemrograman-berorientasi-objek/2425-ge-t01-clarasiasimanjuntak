@@ -20,5 +20,4 @@ public class Account {
     public String toString() {
         return accountname + "|" + owner + "|" + balance;
     }
-    
 }
